@@ -1,0 +1,94 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model employee {
+  id Int @id @default(autoincrement())
+  username String
+  email String @unique
+  phone String
+  password String
+  photo_path String?
+  employee_desc String?
+  profession String?
+  location String?
+  job_title String?
+  skill String[]
+  ig String ?
+  github String?
+  gitlab String?
+  role Int?
+  portfolio portfolio[]
+  experience experience[]
+  acquirer acquirer[]
+}
+
+model company {
+  id Int @id @default(autoincrement())
+  username String 
+  email String @unique
+  company_name String
+  position_company String
+  phone String
+  password String
+  photo_path String?
+  background_path String?
+  company_field String?
+  location String?
+  company_desc String?
+  ig String?
+  linkedIn String?
+  role Int?
+  acquirer acquirer[]
+
+}
+
+model portfolio {
+  id Int @id @default(autoincrement())
+  fkPortofolio employee @relation(fields: [employee_id], references: [id])
+  employee_id Int
+  app_name String?
+  photo_path String?
+  app_url String?
+}
+
+model experience {
+  id Int @id @default(autoincrement())
+  fkExperience employee @relation(fields: [employee_id], references: [id])
+  employee_id Int
+  company_name String
+  position String
+  logo_path String?
+  date_join DateTime
+  date_off DateTime
+  experience_desc String
+}
+
+model acquirer {
+  id Int @id @default(autoincrement())
+  employee_id Int
+  company_id Int
+  purpose_message String
+  acquirer_name String
+  acquirer_email String
+  acquirer_phone String
+  acquirer_desc String
+  fk_acquirer_employee employee @relation(fields: [employee_id], references: [id])
+  fk_acquirer_company company @relation(fields: [company_id], references: [id])
+}
+
+model static_review {
+  id Int @id @default(autoincrement())
+  name String? 
+  profession String?
+  review String?
+}
+  

@@ -1,0 +1,34 @@
+{
+  "cssImports": {
+    "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\app\\layout.js": [
+      "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}"
+    ],
+    "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\app\\home\\page.js": [
+      "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\app\\css\\pagination.css"
+    ]
+  },
+  "cssModules": {
+    "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\app\\page": [
+      "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}"
+    ],
+    "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\app\\home\\page": [
+      "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}",
+      "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\app\\css\\pagination.css"
+    ],
+    "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\app\\register\\page": [
+      "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}"
+    ],
+    "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\app\\login\\page": [
+      "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}"
+    ],
+    "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\app\\login\\company\\page": [
+      "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}"
+    ],
+    "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\app\\register\\company\\page": [
+      "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}"
+    ],
+    "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\app\\profile\\[profileId]\\page": [
+      "C:\\Users\\HP\\Desktop\\PijarCamp\\hi-jobs\\node_modules\\next\\font\\google\\target.css?{\"path\":\"app\\\\layout.js\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}"
+    ]
+  }
+}
