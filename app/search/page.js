@@ -10,7 +10,7 @@ import ButtonGoToProfile from "../home/ButtonGoToProfile";
 import Pagination from "../components/Pagination";
 
 const fetchEmployees = async (url) => {
-  const response = await fetch(url, { cache: "no-store" });
+  const response = await fetch(url);
 
   if (!response.ok) {
     throw new Error("Failed to fetch employees");
@@ -49,7 +49,7 @@ const Page = () => {
           <div className="row">
             <div className="col-md-auto">
               <div>
-                <Image className="ms-2" alt="" src={emp.photo_path ? emp.photo_path : ""} width={100} height={100} style={{ borderRadius: 100 }} />
+                <Image className="ms-2" alt="" src={emp.photo_path ? emp.photo_path : "/asset/photohirejob/m1.jpg"} width={100} height={100} style={{ borderRadius: 100 }} />
               </div>
             </div>
             <div className="col-md-auto me-auto mt-3">

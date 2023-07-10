@@ -9,6 +9,12 @@ export async function GET(request) {
 
     // search post prisma
     const employees = await prisma.employee.findMany({
+      where: {
+        username: {
+          contains: query,
+          mode: "insensitive",
+        },
+      },
       orderBy: {
         [sort]: "asc",
       },

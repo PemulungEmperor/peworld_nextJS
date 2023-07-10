@@ -21,7 +21,7 @@ const Page = () => {
     e.preventDefault();
 
     const encodeSearchQuery = encodeURI(searchQuery || "");
-    const encodeSortOption = encodeURI(sortOption || "");
+    const encodeSortOption = encodeURI(sortOption || "username");
     router.push(`/home?q=${encodeSearchQuery}&sort=${encodeSortOption}`);
   };
 
@@ -40,7 +40,7 @@ const Page = () => {
                   <i className="fa fa-search"></i>
                 </button>
               </span>
-              <select className="form-select" value={sortOption} onChange={(e) => setSortOption(e.target.value)}>
+              <select className="form-select" value={sortOption ? sortOption : "username"} onChange={(e) => setSortOption(e.target.value)}>
                 {option.map((option, index) => (
                   <option key={index}>{option}</option>
                 ))}
@@ -58,36 +58,6 @@ const Page = () => {
       <div className="container shadow p-3 my-5" style={{ backgroundColor: "white", borderRadius: 10 }}>
         <SearchPage />
       </div>
-
-      {/* <nav aria-label="Page navigation example">
-        <ul className="pagination pagination-md justify-content-center ">
-          <li className="page-item ms-2">
-            <a className="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li className="page-item ms-2">
-            <a className="page-link" href="#" style={{ color: "#5E50A1" }}>
-              1
-            </a>
-          </li>
-          <li className="page-item ms-2">
-            <a className="page-link" href="#">
-              2
-            </a>
-          </li>
-          <li className="page-item ms-2">
-            <a className="page-link" href="#">
-              3
-            </a>
-          </li>
-          <li className="page-item ms-2">
-            <a className="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav> */}
       {/* End Main Content */}
       <Footer />
     </div>
