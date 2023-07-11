@@ -15,7 +15,7 @@ export async function PATCH(request: NextRequest, { params: { id } }) {
   const bytes = await file.arrayBuffer();
   const buffer = Buffer.from(bytes);
   const path = `./tmp/${file.name}`;
-  writeFile(path, buffer);
+  await writeFile(path, buffer);
 
   const photoCloud = await cloudinary.uploader.upload(path, { folder: "peworld" });
   const response = await prisma.employee.update({
@@ -26,7 +26,7 @@ export async function PATCH(request: NextRequest, { params: { id } }) {
       photo_path: photoCloud.secure_url,
     },
   });
-  console.log(`open ${path} to see the uploaded file`);
+  // console.log(`open ${path} to see the uploaded file`);
 
   return NextResponse.json({ success: true, message: "success uploaded!", path: response.photo_path });
 }
