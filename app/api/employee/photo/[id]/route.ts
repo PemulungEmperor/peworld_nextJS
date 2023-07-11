@@ -2,6 +2,7 @@ import { writeFile } from "fs/promises";
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "../../../../config/db";
 import cloudinary from "../../../../utils/cloudinary";
+import path from "path";
 
 export async function PATCH(request: NextRequest, { params: { id } }) {
   const data = await request.formData();
@@ -13,13 +14,10 @@ export async function PATCH(request: NextRequest, { params: { id } }) {
 
   const bytes = await file.arrayBuffer();
   const buffer = Buffer.from(bytes);
-  const path = `./public/tmp/${file.name}`;
-  await writeFile(path, buffer);
+  const path = `./tmp/${file.name}`;
+  writeFile(path, buffer);
 
-  //
-  const pathNext = `/tmp/${file.name}`;
-
-  const photoCloud = await cloudinary.uploader.upload(pathNext, { folder: "peworld" });
+  const photoCloud = await cloudinary.uploader.upload(path, { folder: "peworld" });
   const response = await prisma.employee.update({
     where: {
       id: Number(id),
