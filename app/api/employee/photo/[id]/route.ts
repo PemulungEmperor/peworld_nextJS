@@ -13,8 +13,8 @@ export async function PATCH(request: NextRequest, { params: { id } }) {
 
   const bytes = await file.arrayBuffer();
   const buffer = Buffer.from(bytes);
-  const path = `./tmp/${file.name}`;
-  await writeFile(path, buffer);
+  const path = `./public/tmp/${file.name}`;
+  writeFile(path, buffer);
 
   const photoCloud = await cloudinary.uploader.upload(path, { folder: "peworld" });
   const response = await prisma.employee.update({
