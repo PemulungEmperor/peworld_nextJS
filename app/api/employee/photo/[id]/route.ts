@@ -16,7 +16,10 @@ export async function PATCH(request: NextRequest, { params: { id } }) {
   const path = `./public/tmp/${file.name}`;
   await writeFile(path, buffer);
 
-  const photoCloud = await cloudinary.uploader.upload(path, { folder: "peworld" });
+  //
+  const pathNext = `/tmp/${file.name}`;
+
+  const photoCloud = await cloudinary.uploader.upload(pathNext, { folder: "peworld" });
   const response = await prisma.employee.update({
     where: {
       id: Number(id),
