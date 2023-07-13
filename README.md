@@ -1,5 +1,5 @@
 # Peworld
-Hello .. Peworld is a simple responsive website about job recruitment. This project create using NextJs as react framework, and using PostgreSQL together with as a help library to write and store data to database.In this project you can register an account, log in, edit your profile like photos, skills and so on. You can register as a talent/job seeker or as a company/talent seeker. And importan thing else this project is still in the development, and continous to improve.
+Hello .. Peworld is a simple responsive website about job recruitment. This project create using NextJs as react framework, and using PostgreSQL together with Prisma as a help library to write and store data to database.In this project you can register an account, log in, edit your profile like photos, skills and so on. You can register as a talent/job seeker or as a company/talent seeker. And importan thing else this project is still in the development, and continous to improve.
 
 ![image](https://github.com/PemulungEmperor/peworld_nextJS/assets/76174871/e6aabeea-58ac-4fed-94fa-b86976bd1232)
 
