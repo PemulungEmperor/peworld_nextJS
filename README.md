@@ -57,6 +57,20 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
+## More Screenshoot
+
+| <h3>Home Full Page</h3>  | <h3>Company Register Page</h3> |
+| ------------- | ------------- |
+| <img align="center" width="500" src="https://res.cloudinary.com/dwc1snd78/image/upload/v1689249126/readmegithubpurpose/screencapture-peworld-next-js-vercel-app-2023-07-13-18_42_03_msny06.png">   | <img align="center" width="500" src="https://res.cloudinary.com/dwc1snd78/image/upload/v1689249144/readmegithubpurpose/screencapture-peworld-next-js-vercel-app-register-company-2023-07-13-18_44_18_xezgbz.png">   |
+
+| <h3Company Profile Page</h3>  | <h3Profile Page Work Experience Tab</h3> |
+| ------------- | ------------- |
+| <img align="center" width="500" src="https://res.cloudinary.com/dwc1snd78/image/upload/v1689249149/readmegithubpurpose/Untitled_tvo04y.png">   | <img align="center" width="500" src="https://res.cloudinary.com/dwc1snd78/image/upload/v1689249139/readmegithubpurpose/screencapture-peworld-next-js-vercel-app-profile-1-2023-07-13-18_43_06_b6moaq.png">   |
+
+| <h3>Search Page</h3>  | 
+| ------------- |
+| <img align="center" width="500" src="https://res.cloudinary.com/dwc1snd78/image/upload/v1689249153/readmegithubpurpose/screencapture-peworld-next-js-vercel-app-home-2023-07-13-18_48_42_zxzdci.png">|
+
 ## API Reference
 
 #### Get all users 📄
